@@ -1,0 +1,162 @@
+/* Address Upload Component */
+.address-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.upload-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.upload-options label {
+  font-size: 16px;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+form, .camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+video, canvas {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.capture-btn {
+  background-color: #007BFF;
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.capture-btn:hover {
+  background-color: #0056b3;
+}
+
+.result-container {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.result-container button {
+  background-color: #FF9800;
+  margin-top: 20px;
+}
+
+.result-container button:hover {
+  background-color: #E68A00;
+}
+
+
+.result-container p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-container a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.result-container a:hover {
+  text-decoration: underline;
+}
+
+.result-container button {
+  background-color: #FF9800;
+  margin-top: 20px;
+}
+
+.result-container button:hover {
+  background-color: #E68A00;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .address-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .upload-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  form, .camera-container {
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  video, canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .capture-btn {
+    width: 100%;
+  }
+}
+
+
+

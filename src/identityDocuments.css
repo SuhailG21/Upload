@@ -1,0 +1,153 @@
+/* Identity Document Upload Component */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .upload-options {
+    display: flex;
+    justify-content: space-between; /* To position the front and back upload options side by side */
+    width: 100%;
+    gap: 40px;
+  }
+  
+  .upload-options > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-top: 15px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  video, canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .capture-btn {
+    background-color: #007BFF;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .capture-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .result-container {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .result-container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .result-container a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .result-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .result-container button {
+    background-color: #FF9800;
+    margin-top: 20px;
+  }
+  
+  .result-container button:hover {
+    background-color: #E68A00;
+  }
+  
+  @media (max-width: 768px) {
+    .upload-options {
+      flex-direction: column; /* Stack the containers vertically on smaller screens */
+      gap: 20px;
+    }
+  
+    .upload-options > div {
+      width: 100%; /* Ensure each section takes full width */
+    }
+  
+    video, canvas {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  
